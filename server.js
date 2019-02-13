@@ -12,6 +12,8 @@ const passport = require('passport');
 const morgan = require('morgan');
 const path = require('path');
 const setUserOnLocalsMiddleware = require('../server/middleware/user-local');
+const requireLogin = require('../server/middleware/requireLogin');
+const handlebars = require('handlebars');
 
 
 app.use(morgan('default'));
@@ -45,6 +47,12 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(setUserOnLocalsMiddleware());
+
+app.user(handlebars);
+
+app.get('/', requireLogin, (req, res) => {
+  res.json({ "Hello": "World" })
+})
 
 require('./api/routes/')(app);
 

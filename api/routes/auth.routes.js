@@ -16,7 +16,7 @@ module.exports = function (app) {
   app.options('/api/account/*', util.asJSON, util.options);
 
   //GET
-  app.get('/api/account/signin', util.asJSON, auth.signIn);
+  app.get('/api/account/login', util.asJSON, auth.signIn);
   app.get('/api/current_user', util.asJSON, requireLogin, auth.getCurrentUser);
   app.get('/api/account/logout', auth.logoutCurrentUser);
 
