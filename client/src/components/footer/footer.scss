@@ -1,0 +1,45 @@
+.footer{
+  background-color: #0095e7;
+  margin-top: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-evenly;
+  padding: 1rem;
+  text-transform: uppercase;
+  @media(max-width: 768px){
+    margin-top: 4.5rem;
+  }
+  @media(max-width: 649px){
+    margin-top: 5.55rem;
+  }
+  h2{
+    font-size: 1.6rem;
+    @media(max-width: 768px){
+      font-size: 1.3rem;
+    }
+    @media(max-width: 500px){
+      font-size: 1rem;
+    }
+    @media(max-width: 400px){
+      font-size: .8rem;
+    }
+    @media(max-width: 340px){
+      font-size: .7rem;
+    }
+  }
+  a{
+    color: white;
+  }
+  .socialRow{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    .social{
+      :last-child{
+        margin-right: 2rem;
+      }
+    }
+  }
+}

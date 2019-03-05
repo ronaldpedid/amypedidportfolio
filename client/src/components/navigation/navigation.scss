@@ -1,0 +1,67 @@
+@import '../../flexbox.scss';
+.navigationContainer{
+  @extend .flex;
+  @include justifyContent(space-around);
+  @media(min-width: 1919px){
+    @include justifyContent(space-evenly);
+  }
+  @media(max-width: 1600px){
+    @include justifyContent(space-evenly);
+  }
+}
+
+.navCopy{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.navList{
+  @extend .flex;
+  @extend .row;
+  font-size: 1.4rem;
+  color: #0095e7;
+  list-style-type: none;
+}
+
+.navListMobile{
+  @extend .navList;
+  position: relative;
+  flex-direction: column;
+  z-index: 2;
+}
+.navListItem{
+  align-self: center;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  &:nth-child(2){
+    margin: 0 4.5rem;
+  }
+  &:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #0095e7;
+    :visited{
+      color: #0095e7;
+    }
+
+  }
+}
+
+.arrowUp {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-bottom: 20px solid #0095e7;
+}
+
+.arrowDown {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #0095e7;
+}

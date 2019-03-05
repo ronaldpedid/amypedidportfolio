@@ -1,0 +1,61 @@
+.aboutContainer{
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  
+}
+
+.aboutContent{
+  margin-top: 2rem;
+}
+.blurb{
+  font-size: 1.7rem;
+  
+}
+
+.jobRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 5rem 0;
+  @media(max-width: 600px){
+    flex-direction: column;
+  }
+}
+
+.jobRole{
+  font-size: 1.6rem;
+  @media(max-width: 600px){
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }
+
+}
+
+.header{
+  color: #e4905b;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  @media(max-width: 600px){
+    margin-top: 2rem;
+
+  }
+}
+.socialRow{
+  @extend .jobRow;
+}
+
+.social{
+  font-size: 3rem;
+
+ i{
+   color: #0095e7;
+   padding: 1rem;
+ }
+  @media(max-width: 600px){
+    text-align: center;
+  }
+}

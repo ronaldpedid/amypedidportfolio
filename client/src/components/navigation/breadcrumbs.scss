@@ -1,0 +1,27 @@
+@import '../../flexbox.scss';
+
+.breadcrumbs{
+  @extend .flex;
+  width: 100%;
+
+}
+
+.crumbles{
+  @extend .flex;
+  @extend .row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.crumble{
+  width: 100%;
+  align-self: center;
+  h1{
+    padding: 1rem;
+  }
+:hover, ::before, ::after{
+  background-color: #0095e7;
+  color: white;
+  border-radius: 2%;
+}
+}

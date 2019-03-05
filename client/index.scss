@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 10px;
+  background-color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  overflow-x: hidden;
+}
+
+.siteWrapper{
+  margin: 2rem;
+}
+
+a:link{
+  color: #0095e7;
+  &a:visited, &a:active{
+    color: #0095e7;
+  }
+}

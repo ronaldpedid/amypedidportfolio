@@ -1,0 +1,20 @@
+@import '../../flexbox.scss';
+
+.homeContainer{
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+}
+.blockRow{
+  display: flex;
+  @include flexDirection(row);
+  width: 100%;
+  @include justifyContent(center);
+  align-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  @media(max-width: 600px){
+    @include flexDirection(column);
+   
+  }
+}

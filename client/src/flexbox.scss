@@ -1,0 +1,21 @@
+
+.flex{
+  display: flex;
+}
+
+.col{
+  flex-direction: column;
+}
+
+.row{
+  flex-direction: row;
+}
+
+@mixin flexDirection($dir){
+  flex-direction: $dir;
+}
+
+@mixin justifyContent($property){
+  justify-content: $property;
+}
+

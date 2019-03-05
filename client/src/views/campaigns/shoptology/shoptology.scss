@@ -1,0 +1,57 @@
+@import '../../../flexbox.scss';
+@import '../../../animation.scss';
+
+
+.shoptologyContainer{
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+}
+
+.contentBlock{
+  display: flex;
+  @include flexDirection(column);
+  width: 100%;
+  @include justifyContent(center);
+  align-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.shoptologyBanner,
+ .shoptologyImage{
+  align-self: center;
+  margin: 4rem 0;
+  animation: fadein 2s;
+  @media(max-width: 600px){
+    margin: 2rem 0;
+  }
+  
+}
+
+.shoptologyBanner{
+  width: 600px;
+  height: 600px;
+  @media(max-width: 900px){
+    width: 500px;
+    height: 500px;
+  }
+  @media(max-width: 600px){
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.shoptologyImage{
+  width: 600px;
+  height: 500px;
+  @media(max-width: 900px){
+    width: 500px;
+    height: 415px;
+  }
+  @media(max-width: 600px){
+    width: 300px;
+    height: 250px;
+  }
+}
+

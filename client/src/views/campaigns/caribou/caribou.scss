@@ -1,0 +1,122 @@
+@import '../../../flexbox.scss';
+@import '../../../animation.scss';
+
+
+.caribouContainer{
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+}
+
+.contentBlock{
+  display: flex;
+  @include flexDirection(column);
+  width: 100%;
+  @include justifyContent(center);
+  align-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+}
+
+.video{
+  height: 315px;
+  width: 560px;
+  text-align: center;
+  @media(max-width: 600px){
+    width: 300px;
+    height: 180px;
+  }
+}
+
+.caribouBanner,
+.caribouImage,
+.caribouImage1, 
+.caribouImage2,
+.caribouSite{
+  align-self: center;
+  margin: 4rem 0;
+  animation: fadein 2s;
+  @media(max-width: 600px){
+    margin: 2rem 0;
+  }
+  
+}
+.caribouBanner{
+  width: 380px;
+  height: 160px;
+  @media(max-width: 600px){
+    width: 250px;
+    height: 100px;
+  }
+}
+
+.caribouImage{
+  width: 900px;
+  height: 800px;
+  @media(max-width: 901px){
+    width: 500px;
+    height: 445px;
+  }
+  @media(max-width: 600px){
+    width: 300px;
+    height: 260px;
+  }
+}
+
+
+.caribouImage1{
+  width: 900px;
+  height: 360px;
+  @media(max-width: 901px){
+    width: 500px;
+    height: 200px;
+  }
+  @media(max-width: 600px){
+    width: 300px;
+    height: 120px;
+  }
+}
+
+.caribouImage2{
+  width: 900px;
+  height: 850px;
+  @media(max-width: 900px){
+    width: 500px;
+    height: 200px;
+  }
+  @media(max-width: 600px){
+    width: 300px;
+    height: 280px;
+  }
+}
+
+.caribouSite{
+  width: 1100px;
+  height: 600px;
+  @media(max-width: 1100px){
+    width: 700px;
+    height: 380px;
+  }
+  @media(max-width: 600px){
+    width: 300px;
+    height: 160px;
+  }
+}
+.blurb{
+  font-size: 2.125rem;
+  margin: 8rem 5rem;
+  text-align: center;
+  @media(max-width: 600px){
+    font-size: 1.225rem;
+    margin: 5rem 5rem;
+  }
+}
+
+.caribouLink{
+  text-decoration: none;
+  color: #0095e7;
+  &:visited{
+    color: #0095e7;
+  }
+}

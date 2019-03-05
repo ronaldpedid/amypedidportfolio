@@ -1,0 +1,95 @@
+@import '../../../flexbox.scss';
+@import '../../../animation.scss';
+
+
+.tribeContainer{
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+}
+
+.contentBlock{
+  display: flex;
+  @include flexDirection(column);
+  width: 100%;
+  @include justifyContent(center);
+  align-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+}
+
+.tribeBanner, .tribeImage, .tribeImageCart, .tribeSite{
+  align-self: center;
+  margin: 4rem 0;
+  animation: fadein 2s;
+  @media(max-width: 600px){
+    margin: 2rem 0;
+  }
+  
+}
+
+.tribeSite{
+  width: 1100px;
+  height: 600px;
+  @media(max-width: 1100px){
+    width: 700px;
+    height: 380px;
+  }
+  @media(max-width: 600px){
+    width: 300px;
+    height: 165px;
+  }
+}
+.tribeBanner{
+  width: 380px;
+  height: 160px;
+  @media(max-width: 600px){
+    width: 250px;
+    height: 100px;
+  }
+}
+
+.tribeImage{
+  width: 900px;
+  height: 500px;
+  @media(max-width: 900px){
+    width: 500px;
+    height: 275px;
+  }
+  @media(max-width: 600px){
+    width: 300px;
+    height: 165px;
+  }
+}
+
+.tribeImageCart{
+  width: 900px;
+  height: 850px;
+  @media(max-width: 900px){
+    width: 500px;
+    height: 470px;
+  }
+  @media(max-width: 600px){
+    width: 300px;
+    height: 280px;
+  }
+}
+
+.blurb{
+  font-size: 2.125rem;
+  margin: 8rem 5rem;
+  text-align: center;
+  @media(max-width: 600px){
+    font-size: 1.225rem;
+    margin: 5rem 5rem;
+  }
+}
+
+.tribeLink{
+  text-decoration: none;
+  color: #0095e7;
+  &:visited{
+    color: #0095e7;
+  }
+}
