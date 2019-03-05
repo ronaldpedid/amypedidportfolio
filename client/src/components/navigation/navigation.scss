@@ -3,9 +3,11 @@
   @extend .flex;
   @include justifyContent(space-around);
   @media(min-width: 1919px){
+    @include justifyContent(space-around); /* IE EDGE FIX */
     @include justifyContent(space-evenly);
   }
   @media(max-width: 1600px){
+    @include justifyContent(space-around); /* IE EDGE FIX */
     @include justifyContent(space-evenly);
   }
 }
