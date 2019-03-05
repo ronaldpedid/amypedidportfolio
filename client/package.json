@@ -7,7 +7,8 @@
     "dev": "webpack --mode=development --devtool=false",
     "start": "webpack-dev-server --mode=development --hot --watch",
     "build": "webpack",
-    "production": "webpack --config=webpack.production.config"
+    "production": "webpack --config=webpack.production.config",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
