@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import styles from './walmart.scss';
 import { Breadcrumbs, Crumbles, Crumble } from '../../../components/navigation/Breadcrumbs';
 import { Link } from 'react-router-dom';
-import wmm1 from '/public/assets/walmart/1wmm.png';
-import wmm2 from '/public/assets/walmart/2wmm.png';
-import wmm3 from '/public/assets/walmart/3wmm.png';
-import wmm4 from '/public/assets/walmart/4wmm.png';
+import wmm1 from '../../../assets/walmart/1wmm.png';
+import wmm2 from '../../../assets/walmart/2wmm.png';
+import wmm3 from '../../../assets/walmart/3wmm.png';
+import wmm4 from '../../../assets/walmart/4wmm.png';
 
 const wmmUrlHttp = "http://www.walmartmuseum.com/timeline"
 const wmmUrl = "www.walmartmuseum.com/timeline"
