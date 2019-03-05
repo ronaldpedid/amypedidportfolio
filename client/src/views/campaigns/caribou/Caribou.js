@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import styles from './caribou.scss';
 import { Breadcrumbs, Crumbles, Crumble } from '../../../components/navigation/Breadcrumbs';
 import { Link } from 'react-router-dom';
-import cb1 from '../../../assets/caribou/1cb.png';
-import cb2 from '../../../assets/caribou/2cb.png';
-import cb3 from '../../../assets/caribou/3cb.png';
-import cb4 from '../../../assets/caribou/4cb.png';
-import cb5 from '../../../assets/caribou/5cb.png';
-import cb6 from '../../../assets/caribou/6cb.png';
-import cb7 from '../../../assets/caribou/7cb.png';
+import cb1 from '/public/assets/caribou/1cb.png';
+import cb2 from '/public/assets/caribou/2cb.png';
+import cb3 from '/public/assets/caribou/3cb.png';
+import cb4 from '/public/assets/caribou/4cb.png';
+import cb5 from '/public/assets/caribou/5cb.png';
+import cb6 from '/public/assets/caribou/6cb.png';
+import cb7 from '/public/assets/caribou/7cb.png';
 
 export class CaribouContent extends Component {
   render() {

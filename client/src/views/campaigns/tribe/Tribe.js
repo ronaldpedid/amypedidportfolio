@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styles from './tribe.scss';
-import trb1 from '../../../assets/tribe/1th.png';
-import trb2 from '../../../assets/tribe/2th.png';
-import trb3 from '../../../assets/tribe/3th.png';
-import trb4 from '../../../assets/tribe/4th.png';
-import trb5 from '../../../assets/tribe/5th.png';
-import trb6 from '../../../assets/tribe/6th.png';
+import trb1 from '/public/assets/tribe/1th.png';
+import trb2 from '/public/assets/tribe/2th.png';
+import trb3 from '/public/assets/tribe/3th.png';
+import trb4 from '/public/assets/tribe/4th.png';
+import trb5 from '/public/assets/tribe/5th.png';
+import trb6 from '/public/assets/tribe/6th.png';
 import { Breadcrumbs, Crumbles, Crumble } from '../../../components/navigation/Breadcrumbs';
 import { Link } from 'react-router-dom';
 

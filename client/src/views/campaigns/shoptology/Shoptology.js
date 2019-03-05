@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import styles from './shoptology.scss';
 import { Breadcrumbs, Crumbles, Crumble } from '../../../components/navigation/Breadcrumbs';
 import { Link } from 'react-router-dom';
-import shop1 from '../../../assets/shoptology/1shp.png';
-import shop2 from '../../../assets/shoptology/2shp.png';
-import shop3 from '../../../assets/shoptology/3shp.png';
-import shop4 from '../../../assets/shoptology/4shp.png';
-import shop5 from '../../../assets/shoptology/5shp.png';
+import shop1 from '/public/assets/shoptology/1shp.png';
+import shop2 from '/public/assets/shoptology/2shp.png';
+import shop3 from '/public/assets/shoptology/3shp.png';
+import shop4 from '/public/assets/shoptology/4shp.png';
+import shop5 from '/public/assets/shoptology/5shp.png';
 
 
 
