@@ -5,13 +5,13 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const config = require('../api/config/config')
-const keys = require('../keys/init');
+const config = require('./api/config/config')
+const keys = require('./keys/init');
 const MongoStore = require('connect-mongo')(session);
 const passport = require('passport');
 const morgan = require('morgan');
 const path = require('path');
-const setUserOnLocalsMiddleware = require('../middleware/user-local');
+const setUserOnLocalsMiddleware = require('./middleware/user-local');
 
 app.use(morgan('default'));
 
