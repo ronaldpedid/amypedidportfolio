@@ -7,7 +7,7 @@
     "dev": "webpack --mode=development --devtool=false",
     "start": "webpack-dev-server --mode=development --hot --watch",
     "build": "webpack",
-    "productionBuild": "webpack --config=webpack.production.config"
+    "production": "webpack --config=webpack.production.config"
   },
   "author": "",
   "license": "ISC",
