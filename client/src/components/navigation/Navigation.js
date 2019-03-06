@@ -52,8 +52,8 @@ class ArrowOpen extends Component {
   render() {
     return (
       <div className={styles.arrowContainer}>
-        <div onClick={this.props.onClick} className={styles.arrowUp}></div>
         <ul className={styles.navListMobile}>
+          <div onClick={this.props.onClick} className={styles.arrowUp}></div>
           <Link to={urls[0]}><li>Work</li></Link>
           <Link to={urls[1]}><li>About</li></Link>
           <Link to={urls[2]} download><li>Resume</li></Link>

@@ -26,6 +26,7 @@
 .navListMobile{
   @extend .navList;
   flex-direction: column;
+  justify-content: left;
   z-index: 2;
   font-size: 1.8rem;
   line-height: 1.6;
