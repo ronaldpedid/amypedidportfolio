@@ -56,7 +56,7 @@ class ArrowOpen extends Component {
         <ul className={styles.navListMobile}>
           <Link to={urls[0]}><li>Work</li></Link>
           <Link to={urls[1]}><li>About</li></Link>
-          <Link to={urls[2]}><li>Resume</li></Link>
+          <Link to={urls[2]} download><li>Resume</li></Link>
         </ul>
       </div>
     )

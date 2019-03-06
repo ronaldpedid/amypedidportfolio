@@ -28,6 +28,7 @@
   flex-direction: column;
   z-index: 2;
   font-size: 1.8rem;
+  line-height: 1.6;
 }
 .navListItem{
   align-self: center;
@@ -51,12 +52,13 @@
 .arrowUp {
   width: 0; 
   height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid #0095e7;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid lightcoral;
 }
 
 .arrowUp1 {
-  background-color: lightcoral;
+  @extend .arrowUp;
+  background-color: 0095e7;
 }
 
