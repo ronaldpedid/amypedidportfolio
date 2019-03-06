@@ -26,7 +26,7 @@
       font-size: .8rem;
     }
     @media(max-width: 340px){
-      font-size: .7rem;
+      font-size: .6rem;
     }
   }
   a{
@@ -35,7 +35,7 @@
   .socialRow{
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-content: flex-end;
     .social{
       :last-child{
         margin-right: 2rem;
