@@ -14,13 +14,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use('/public', express.static('public'));
+
+app.get('/resume', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/apresume.pdf'));
+});
+
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'));
 });
 
-app.get('/download/resume', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/apresume.pdf'));
-});
+
 
 app.listen(process.env.PORT || PORT, () => {
   console.log('listening on ' + PORT);
