@@ -29,7 +29,9 @@ export class Navigation extends Component {
   render() {
     return (
       <nav className={styles.navigationContainer}>
-        <h1 className={styles.navCopy}>Amy Pedid</h1>
+        <h1 className={styles.navCopy}>
+          <Link to={urls[0]}>Amy Pedid</Link>
+        </h1>
         <Media query={{ maxWidth: 599 }}>
           {matches => matches ? (
             <div>
@@ -37,8 +39,10 @@ export class Navigation extends Component {
               /> : <ArrowClosed onClick={this.openMenu} />}
             </div>
           ) : (<ul className={styles.navList}>
-            <li onClick={this.handleClick} className={styles.navListItem}><Link to={urls[0]}>Work</Link></li>
-            <li onClick={this.handleClick} className={styles.navListItem}><Link to={urls[1]}>About</Link></li>
+            <li onClick={this.handleClick} className={styles.navListItem}>
+              <Link to={urls[0]}>Work</Link></li>
+            <li onClick={this.handleClick} className={styles.navListItem}>
+              <Link to={urls[1]}>About</Link></li>
             <li className={styles.navListItem}><a href={urls[2]} download target="blank">Resume</a></li>
           </ul>)}
         </Media>
@@ -54,7 +58,7 @@ class MobileNav extends Component {
         <ul className={styles.navListMobile}>
           <Link to={urls[0]}><li className={styles.navListItemM}>Work</li></Link>
           <Link to={urls[1]}><li className={styles.navListItemM}>About</li></Link>
-          <a href={urls[2]} download><li className={styles.navListItemM}>Resume</li></a>
+          <a href={urls[2]}><li className={styles.navListItemM}>Resume</li></a>
         </ul>
       </div>
     )
