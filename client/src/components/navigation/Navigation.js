@@ -38,7 +38,7 @@ export class Navigation extends Component {
             </div>
           ) : (<ul className={styles.navList}>
             <li onClick={this.handleClick} className={styles.navListItem}><Link to={urls[0]}>Work</Link></li>
-            <li onClick={this.handleClick} className={styles.navListItem}><Link to={url[1]}>About</Link></li>
+            <li onClick={this.handleClick} className={styles.navListItem}><Link to={urls[1]}>About</Link></li>
             <li className={styles.navListItem}><a href={urls[2]} download target="blank">Resume</a></li>
           </ul>)}
         </Media>
