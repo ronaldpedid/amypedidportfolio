@@ -11,7 +11,13 @@
 }
 .blurb{
   font-size: 1.7rem;
-  
+  margin: 0 7rem;
+  @media(max-width: 768px){
+    margin: 0 5rem;
+  }
+  @media(max-width: 600px){
+    margin: 0 2rem;
+  }
 }
 
 .jobRow{
@@ -30,7 +36,6 @@
     font-size: 1.8rem;
     margin: 2rem 0;
   }
-
 }
 
 .header{
@@ -41,7 +46,6 @@
   margin-bottom: 3rem;
   @media(max-width: 600px){
     margin-top: 2rem;
-
   }
 }
 .socialRow{

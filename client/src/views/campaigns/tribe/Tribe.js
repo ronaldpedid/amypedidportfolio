@@ -26,6 +26,7 @@ class ContentContainer extends Component {
       <div className={styles.bgContainer}>
         <div className={styles.contentBlock}>
           <img className={styles.tribeBanner} src={trb1} alt="Tribe Hummus Logo" />
+          <p className={styles.blurb}>We set out to make Tribe hummus the snack of choices for anyone wanting to try something new and delicious.</p>
           <img className={styles.tribeImage} src={trb2} alt="Tribe Hummus Logo" />
           <img className={styles.tribeImage} src={trb3} alt="Tribe Hummus Logo" />
           <img className={styles.tribeImageCart} src={trb4} alt="Tribe Hummus Logo" />

@@ -18,6 +18,9 @@ app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'));
 });
 
+app.get('/download/resume', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/apresume.pdf'));
+});
 
 app.listen(process.env.PORT || PORT, () => {
   console.log('listening on ' + PORT);

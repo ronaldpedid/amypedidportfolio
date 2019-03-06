@@ -24,6 +24,7 @@ export class Navigation extends Component {
 
   handleClick() {
     document.getElementById('siteTop').scrollIntoView();
+    this.setState({ navMenuOpen: false });
   }
   render() {
     return (
@@ -37,7 +38,7 @@ export class Navigation extends Component {
             </div>
           ) : (<ul className={styles.navList}>
             <li onClick={this.handleClick} className={styles.navListItem}><Link to="/">Work</Link></li>
-            <li className={styles.navListItem}><Link to="/about">About</Link></li>
+            <li onClick={this.handleClick} className={styles.navListItem}><Link to="/about">About</Link></li>
             <li className={styles.navListItem}><a href={resumeUrl} target="blank">Resume</a></li>
           </ul>)}
         </Media>
