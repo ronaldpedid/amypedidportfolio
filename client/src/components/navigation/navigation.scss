@@ -25,9 +25,9 @@
 
 .navListMobile{
   @extend .navList;
-  position: relative;
   flex-direction: column;
   z-index: 2;
+  font-size: 1.6rem;
 }
 .navListItem{
   align-self: center;
@@ -57,11 +57,32 @@
   border-bottom: 20px solid #0095e7;
 }
 
-.arrowDown {
+.arrowUp {
   width: 0; 
   height: 0; 
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   
-  border-top: 20px solid #0095e7;
+  border-bottom: 20px solid #0095e7;
+}
+
+.arrowDown {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.arrowDown:after{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "\274c"; /* use the hex value here... */
+  font-size: 50px; 
+  color: #0095e7;
+  line-height: 100px;
+  text-align: center;
 }

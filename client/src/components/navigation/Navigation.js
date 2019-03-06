@@ -67,7 +67,7 @@ class ArrowClosed extends Component {
   render() {
     return (
       <div className={styles.arrowContainer}>
-        <div onClick={this.props.onClick} className={styles.arrowDown}></div>
+        <div onClick={this.props.onClick} className={styles.arrowUp1}></div>
       </div>
     )
   }
