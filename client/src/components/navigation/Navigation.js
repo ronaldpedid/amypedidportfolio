@@ -47,6 +47,20 @@ export class Navigation extends Component {
   }
 }
 
+class MobileNav extends Component {
+  render() {
+    return (
+      <div className={styles.arrowContainer}>
+        <ul className={styles.navListMobile}>
+          <Link to={urls[0]}><li className={styles.navListItemM}>Work</li></Link>
+          <Link to={urls[1]}><li className={styles.navListItemM}>About</li></Link>
+          <a href={urls[2]} download><li className={styles.navListItemM}>Resume</li></a>
+        </ul>
+      </div>
+    )
+  }
+}
+
 
 class ArrowOpen extends Component {
   render() {
@@ -54,9 +68,7 @@ class ArrowOpen extends Component {
       <div className={styles.arrowContainer}>
         <ul className={styles.navListMobile}>
           <div onClick={this.props.onClick} className={styles.arrowUp}></div>
-          <Link to={urls[0]}><li>Work</li></Link>
-          <Link to={urls[1]}><li>About</li></Link>
-          <Link to={urls[2]} download><li>Resume</li></Link>
+          <MobileNav />
         </ul>
       </div>
     )

@@ -8,7 +8,6 @@ a{
   width: 500px;
   height: 500px;
   max-width: 500px;
-  border: 1px solid black;
   margin-left: 2rem;
   align-self: center;
   cursor: pointer;
@@ -64,6 +63,10 @@ a{
   text-align: center;
   @media(max-width: 600px){
     font-size: 1.4rem;
+    text-align: center;
+  }
+  @media(max-width: 425px){
+    font-size: 1.2rem;
     text-align: center;
   }
 }
