@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use('/public', express.static('public'));
 
 app.get('/resume', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/apresume.pdf'));
+  res.sendFile(path.join(__dirname, './public/AmyPedidArtDirector.pdf'));
 });
 
 app.get('/*', (req, res) => {

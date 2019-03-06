@@ -9,6 +9,7 @@
 .aboutContent{
   margin-top: 2rem;
 }
+
 .blurb{
   font-size: 1.7rem;
   margin: 0 7rem;
@@ -23,24 +24,6 @@
   }
 }
 
-.jobRow{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 5rem 0;
-  @media(max-width: 600px){
-    flex-direction: column;
-  }
-}
-
-.jobRole{
-  font-size: 1.6rem;
-  @media(max-width: 600px){
-    font-size: 1.8rem;
-    margin: 2rem 0;
-  }
-}
-
 .header{
   color: #e4905b;
   font-size: 3.2rem;
@@ -52,7 +35,13 @@
   }
 }
 .socialRow{
-  @extend .jobRow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem 0;
+  @media(max-width: 600px){
+    flex-direction: column;
+  }
 }
 
 .social{
