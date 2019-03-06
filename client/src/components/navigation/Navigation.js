@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Media from 'react-media';
 import styles from './navigation.scss';
 import { Link } from 'react-router-dom';
-const resumeUrl = 'https://www.dropbox.com/s/se0z76jho8eh5zx/Amy%20Pedid-Art%20Director_2019%20resume.pdf?dl=0&fbclid=IwAR0nscBYTw3w8cMmsz9H0y2Hujxpr8BeFgriY15AtZFb2E2XwEmMryRDWv0';
+const urls = ['/', '/about', '/resume'];
 
 export class Navigation extends Component {
   constructor(props) {
@@ -37,9 +37,9 @@ export class Navigation extends Component {
               /> : <ArrowClosed onClick={this.openMenu} />}
             </div>
           ) : (<ul className={styles.navList}>
-            <li onClick={this.handleClick} className={styles.navListItem}><Link to="/">Work</Link></li>
-            <li onClick={this.handleClick} className={styles.navListItem}><Link to="/about">About</Link></li>
-            <li className={styles.navListItem}><a href={resumeUrl} target="blank">Resume</a></li>
+            <li onClick={this.handleClick} className={styles.navListItem}><Link to={urls[0]}>Work</Link></li>
+            <li onClick={this.handleClick} className={styles.navListItem}><Link to={url[1]}>About</Link></li>
+            <li className={styles.navListItem}><a href={urls[2]} download target="blank">Resume</a></li>
           </ul>)}
         </Media>
       </nav>
