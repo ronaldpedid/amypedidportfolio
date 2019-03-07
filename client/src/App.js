@@ -14,7 +14,7 @@ import errImg from './assets/404.png';
 const NoMatch = ({ location }) => (
   <div className={styles.errorPage}>
     <img src={errImg} alt="404 not found" />
-    <h3>Whoops! <code>{location.pathname}</code> not found.</h3>
+    <h3>Whoops! Page not found.</h3>
   </div>
 )
 
