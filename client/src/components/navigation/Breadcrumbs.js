@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Media from 'react-media';
 import styles from './breadcrumbs.scss';
 
 export class Breadcrumbs extends Component {

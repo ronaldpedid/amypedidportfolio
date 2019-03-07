@@ -104,7 +104,7 @@ export class TribeBlock extends Component {
 export class ShopBlock extends Component {
   render() {
     return (
-      <Link to="/shoptology">
+      <Link to="/graphic_design">
         <DisplayBlock
           className={styles.shpblock}
           campid={'shoptology'}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './about.scss';
 import { Breadcrumbs, Crumbles, Crumble } from '../../components/navigation/Breadcrumbs';
 import { Link } from 'react-router-dom';
-const resumeUrl = 'https://www.dropbox.com/s/se0z76jho8eh5zx/Amy%20Pedid-Art%20Director_2019%20resume.pdf?dl=0&fbclid=IwAR0nscBYTw3w8cMmsz9H0y2Hujxpr8BeFgriY15AtZFb2E2XwEmMryRDWv0';
+const resumeUrl = '/resume';
 const aboutParagraphText = 'It’s simple right? Design experiences that can break through the cacophony and create a way to efficiently satisfy customers. However, when new mandatories pop up or shorter deadlines emerge, that logical thinking can easily go out the window and be replaced by: anxiety, fear and bad work. That’s why in every project I am a part of I make it a priority to think big, and plan well. A tested strategy that has effectively combated substanceless decisions and avoided costly timeline pitfalls. If this collaborative and strategic environment suits you, let’s chat about how we can solve your brand and marketing problems. Together, we can think big and plan well. It’s simple right? '
 export class About extends Component {
   render() {
@@ -29,7 +29,7 @@ export class AboutContent extends Component {
         </div>
         <Breadcrumbs>
           <Crumbles>
-            <Link to="/shoptology"><Crumble>
+            <Link to="/graphic_design"><Crumble>
               <h1>Graphic Design</h1>
             </Crumble></Link>
             <a href={resumeUrl} target="_blank">

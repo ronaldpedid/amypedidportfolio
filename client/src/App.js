@@ -9,10 +9,12 @@ import { About } from './views/about/About';
 import { CaribouContent } from './views/campaigns/caribou/Caribou';
 import { ShoptologyContent } from './views/campaigns/shoptology/Shoptology';
 import Footer from './components/footer/Footer';
+import errImg from './assets/404.png';
 
 const NoMatch = ({ location }) => (
-  <div>
-    <h3>No match for <code>{location.pathname}</code></h3>
+  <div className={styles.errorPage}>
+    <img src={errImg} alt="404 not found" />
+    <h3>Whoops! <code>{location.pathname}</code> not found.</h3>
   </div>
 )
 
@@ -28,10 +30,9 @@ class App extends Component {
               <Route path="/walmart" component={WalmartContent} />
               <Route path="/tribe" component={TribeContent} />
               <Route path="/caribou" component={CaribouContent} />
-              <Route path="/shoptology" component={ShoptologyContent} />
+              <Route path="/graphic_design" component={ShoptologyContent} />
               <Route path="/about" component={About} />
               <Route component={NoMatch} />
-
             </Switch>
           </div>
           <Footer />
