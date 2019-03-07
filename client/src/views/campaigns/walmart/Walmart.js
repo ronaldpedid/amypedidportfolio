@@ -41,7 +41,7 @@ class ContentContainer extends Component {
               </Crumble></Link>
               <Link to="/shoptology">
                 <Crumble>
-                  <h1>Shoptology</h1>
+                  <h1>Graphic Design</h1>
                 </Crumble></Link>
             </Crumbles>
           </Breadcrumbs>

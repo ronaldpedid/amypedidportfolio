@@ -38,7 +38,7 @@ export class DisplayBlock extends Component {
           <div className={styles.hoverBlock}>
             <h1>{this.props.desc}</h1>
             <h1>{this.props.desc1}</h1>
-            <h1>{this.props.desc2}</h1>
+            <h2>{this.props.desc2}</h2>
           </div> : ''}
       </div>
     )
@@ -55,7 +55,7 @@ export class WalmartBlock extends Component {
             campid={'walmart'}
             desc={'USER EXPERIENCE'}
             desc1={'USER INTERFACE'}
-            desc2={null}
+            desc2={'view more'}
           >
 
           </DisplayBlock>
@@ -76,7 +76,7 @@ export class CaribouBlock extends Component {
           campid={'caribou'}
           desc={'SHOPPER MARKETING'}
           desc1={'OMNI-CHANNEL'}
-          desc2={null}
+          desc2={'view more'}
         >
         </DisplayBlock>
       </Link>
@@ -93,7 +93,7 @@ export class TribeBlock extends Component {
           campid={'tribe'}
           desc={'PHOTOGRAPHY'}
           desc1={'SHOPPER MARKETING'}
-          desc2={null}
+          desc2={'view more'}
         >
         </DisplayBlock>
       </Link>
@@ -110,7 +110,8 @@ export class ShopBlock extends Component {
           campid={'shoptology'}
           desc="ILLUSTRATIONS"
           desc1="GRAPHIC DESIGN"
-          desc2={null}
+          desc2={'view more'}
+
         >
         </DisplayBlock>
       </Link>

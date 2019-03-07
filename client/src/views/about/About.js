@@ -30,7 +30,7 @@ export class AboutContent extends Component {
         <Breadcrumbs>
           <Crumbles>
             <Link to="/shoptology"><Crumble>
-              <h1>Shoptology</h1>
+              <h1>Graphic Design</h1>
             </Crumble></Link>
             <a href={resumeUrl} target="_blank">
               <Crumble>

@@ -14,7 +14,7 @@ a{
   background-color: #888888;
   background-image: url('../../assets/astronomy.jpg');
   background-size: cover;
-  h1{
+  h1, h2{
     @extend .flex;
     @include justifyContent(center);
     width: 100%;
@@ -49,6 +49,8 @@ a{
     height: 220px;
    
   }
+
+
 }
 
 .hoverBlock{
@@ -61,6 +63,10 @@ a{
   text-decoration: none;
   font-size: 1.6rem;
   text-align: center;
+  h2{
+    margin-top: 1rem;
+    color: #0095e7;
+  }
   @media(max-width: 600px){
     font-size: 1.4rem;
     text-align: center;
