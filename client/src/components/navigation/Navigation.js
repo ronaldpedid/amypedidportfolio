@@ -25,7 +25,7 @@ export class Navigation extends Component {
   }
 
   handleClick() {
-    closeMenu();
+    this.setState({ navMenuOpen: false })
     document.getElementById('siteTop').scrollIntoView();
   }
   render() {
