@@ -71,8 +71,8 @@ class MobileNav extends Component {
 class NavOpen extends Component {
   render() {
     return (
-      <div className={styles.arrowContainer}>
-        <img class src={ham} onClick={this.props.onClick} />
+      <div className={styles.hamburger}>
+        <img src={ham} onClick={this.props.onClick} />
         <ul className={styles.navListMobile}>
           <MobileNav />
         </ul>
@@ -84,7 +84,7 @@ class NavOpen extends Component {
 class NavClosed extends Component {
   render() {
     return (
-      <div className={styles.arrowContainer}>
+      <div className={styles.hamburger} >
         <img src={ham} onClick={this.props.onClick} />
       </div>
     )

@@ -27,15 +27,15 @@
   @extend .navList;
   flex-direction: column;
   justify-content: right;
-  z-index: 2;
   font-size: 1.8rem;
   line-height: 1.6;
+  text-align: right;
 }
 .navListItem{
-  align-self: center;
+  align-self: right;
   width: 100%;
   height: auto;
-  justify-content: center;
+  justify-content: right;
   &:nth-child(2){
     margin: 0 4.5rem;
   }
@@ -50,5 +50,9 @@
   }
 }
 
-
+.hamburger{
+  @extend .flex;
+  flex-direction: column;
+  max-width: 44px;
+}
 
