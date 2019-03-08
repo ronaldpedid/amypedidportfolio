@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Media from 'react-media';
 import styles from './navigation.scss';
 import { Link } from 'react-router-dom';
+import ham from '../../assets/ham_menu.png';
 const urls = ['/', '/about', '/resume'];
+
 
 export class Navigation extends Component {
   constructor(props) {
@@ -35,8 +37,8 @@ export class Navigation extends Component {
         <Media query={{ maxWidth: 599 }}>
           {matches => matches ? (
             <div>
-              {this.state.navMenuOpen ? <ArrowOpen onClick={this.closeMenu}
-              /> : <ArrowClosed onClick={this.openMenu} />}
+              {this.state.navMenuOpen ? <NavOpen onClick={this.closeMenu}
+              /> : <NavClosed onClick={this.openMenu} />}
             </div>
           ) : (<ul className={styles.navList}>
             <li onClick={this.handleClick} className={styles.navListItem}>
@@ -66,12 +68,12 @@ class MobileNav extends Component {
 }
 
 
-class ArrowOpen extends Component {
+class NavOpen extends Component {
   render() {
     return (
       <div className={styles.arrowContainer}>
         <ul className={styles.navListMobile}>
-          <div onClick={this.props.onClick} className={styles.arrowUp}></div>
+          <img src={ham} onClick={this.props.onClick} />
           <MobileNav />
         </ul>
       </div>
@@ -79,11 +81,11 @@ class ArrowOpen extends Component {
   }
 }
 
-class ArrowClosed extends Component {
+class NavClosed extends Component {
   render() {
     return (
       <div className={styles.arrowContainer}>
-        <div onClick={this.props.onClick} className={styles.arrowUp1}></div>
+        <img src={ham} onClick={this.props.onClick} />
       </div>
     )
   }
