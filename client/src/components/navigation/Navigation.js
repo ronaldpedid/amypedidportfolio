@@ -72,8 +72,8 @@ class NavOpen extends Component {
   render() {
     return (
       <div className={styles.arrowContainer}>
+        <img class src={ham} onClick={this.props.onClick} />
         <ul className={styles.navListMobile}>
-          <img src={ham} onClick={this.props.onClick} />
           <MobileNav />
         </ul>
       </div>
